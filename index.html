@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космология - Исследуй Вселенную</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">🌌 Космология</span>
+            </div>
+            <div class="audio-player">
+                <audio id="bg-music" src="MP3/cosmic-odyssey-20240527-105718.mp3" loop></audio>
+                <button id="toggle-mute" title="Включить/выключить звук">🔊</button>
+                <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="1" title="Громкость">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="planets.html" class="nav-link">Планеты</a></li>
+                <li><a href="stars.html" class="nav-link">Звезды</a></li>
+                <li><a href="galaxies.html" class="nav-link">Галактики</a></li>
+                <li><a href="blackholes.html" class="nav-link">Черные дыры</a></li>
+                <li><a href="missions.html" class="nav-link">Миссии</a></li>
+                <li><a href="myths.html" class="nav-link">Мифы</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Открыть меню" tabindex="0">
+                <svg class="burger-icon" width="32" height="32" viewBox="0 0 32 32">
+                    <rect class="line top" x="6" y="9" width="20" height="3" rx="1.5" />
+                    <rect class="line middle" x="6" y="15" width="20" height="3" rx="1.5" />
+                    <rect class="line bottom" x="6" y="21" width="20" height="3" rx="1.5" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Исследуй Бесконечность</h1>
+            <p class="hero-subtitle">Открой для себя тайны Вселенной</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-unit">триллиона</span>
+                    <span class="stat-label">Галактик во Вселенной</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100–400</span>
+                    <span class="stat-unit">млрд</span>
+                    <span class="stat-label">Звезд в Млечном Пути</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">13.8</span>
+                    <span class="stat-unit">млрд</span>
+                    <span class="stat-label">Лет Вселенной</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="nebula"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Исследуй Космос</h2>
+                <div class="features-grid">
+                    <div class="feature-card" onclick="location.href='planets.html'">
+                        <div class="feature-icon">🪐</div>
+                        <h3>Планеты</h3>
+                        <p>Исследуйте планеты Солнечной системы и экзопланеты</p>
+                    </div>
+                    <div class="feature-card" onclick="location.href='stars.html'">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Звезды</h3>
+                        <p>Узнайте о звездах, их типах и жизненном цикле</p>
+                    </div>
+                    <div class="feature-card" onclick="location.href='galaxies.html'">
+                        <div class="feature-icon">🌌</div>
+                        <h3>Галактики</h3>
+                        <p>Исследуйте галактики и структуру Вселенной</p>
+                    </div>
+                    <div class="feature-card" onclick="location.href='blackholes.html'">
+                        <div class="feature-icon">⚫</div>
+                        <h3>Черные дыры</h3>
+                        <p>Погрузитесь в тайны черных дыр</p>
+                    </div>
+                    <div class="feature-card" onclick="location.href='missions.html'">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Миссии</h3>
+                        <p>История космических миссий и исследований</p>
+                    </div>
+                    <div class="feature-card" onclick="location.href='myths.html'">
+                        <div class="feature-icon">🔮</div>
+                        <h3>Мифы</h3>
+                        <p>Мифы и заблуждения о космосе</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-discoveries">
+            <div class="container">
+                <h2 class="section-title">Последние Открытия</h2>
+                <div class="discoveries-grid">
+                    <article class="discovery-card">
+                        <div class="discovery-image">
+                            <img src="ipg/Новые экзопланеты.jpg" alt="Экзопланета">
+                        </div>
+                        <div class="discovery-content">
+                            <h3>Новые экзопланеты</h3>
+                            <p>Обнаружены потенциально обитаемые планеты в системе TRAPPIST-1</p>
+                            <span class="discovery-date">2024</span>
+                        </div>
+                    </article>
+                    <article class="discovery-card">
+                        <div class="discovery-image">
+                            <img src="ipg/Гравитационные волны.jpg" alt="Гравитационные волны">
+                        </div>
+                        <div class="discovery-content">
+                            <h3>Гравитационные волны</h3>
+                            <p>LIGO зафиксировал слияние черных дыр на рекордном расстоянии</p>
+                            <span class="discovery-date">2023</span>
+                        </div>
+                    </article>
+                    <article class="discovery-card">
+                        <div class="discovery-image">
+                            <img src="ipg/Темная материя.gif" alt="Темная материя">
+                        </div>
+                        <div class="discovery-content">
+                            <h3>Темная материя</h3>
+                            <p>Новые данные о распределении темной материи во Вселенной</p>
+                            <span class="discovery-date">2024</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cosmic-facts">
+            <div class="container">
+                <h2 class="section-title">Удивительные Факты</h2>
+                <div class="facts-grid">
+                    <div class="fact-item">
+                        <div class="fact-number">93</div>
+                        <div class="fact-text">миллиарда световых лет - диаметр наблюдаемой Вселенной</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-number">99.86%</div>
+                        <div class="fact-text">массы Солнечной системы составляет Солнце</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-number">1</div>
+                        <div class="fact-text">секунда вблизи черной дыры = годы на Земле (релятивистское замедление времени)</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-number">10^22-10^24</div>
+                        <div class="fact-text">звезд во Вселенной (оценка)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Космология</h3>
+                    <p>Исследуйте тайны Вселенной вместе с нами</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="planets.html">Планеты</a></li>
+                        <li><a href="stars.html">Звезды</a></li>
+                        <li><a href="galaxies.html">Галактики</a></li>
+                        <li><a href="blackholes.html">Черные дыры</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Дополнительно</h4>
+                    <ul>
+                        <li><a href="missions.html">Миссии</a></li>
+                        <li><a href="myths.html">Мифы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Космология. Все права защищены.</p>
+                <div class="full-edition-link">
+                    <a href="https://www.nasa.gov" target="_blank">📚 Полное издание: NASA - Официальный сайт</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
